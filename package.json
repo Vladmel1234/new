@@ -1,0 +1,40 @@
+{
+  "name": "test",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "eslint": "^4.10.0",
+    "eslint-plugin-jsx-a11y": "5.1.1",
+    "grid-styled": "^2.0.0-11",
+    "history": "^4.7.2",
+    "lodash": "^4.17.4",
+    "moment": "^2.19.3",
+    "rc-progress": "^2.2.5",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-redux": "^5.0.6",
+    "react-router-dom": "^4.2.2",
+    "react-router-redux": "^5.0.0-alpha.8",
+    "react-scripts": "1.0.14",
+    "react-styled-flexboxgrid": "^2.1.1",
+    "redux": "^3.7.2",
+    "redux-thunk": "^2.2.0",
+    "styled-components": "^2.2.3",
+    "styled-system": "^1.0.8",
+    "timeago.js": "^3.0.2"
+  },
+  "scripts": {
+    "start": "NODE_PATH=src/ react-scripts start",
+    "build": "NODE_PATH=src/ react-scripts build",
+    "test": "NODE_PATH=src/ react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "server": "json-server -p 8081 db.json"
+  },
+  "devDependencies": {
+    "axios": "^0.17.1",
+    "eslint-config-airbnb": "^15.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-react": "^7.4.0",
+    "redux-devtools-extension": "^2.13.2"
+  }
+}
