@@ -10,8 +10,12 @@ class App extends Component {
     this.props.getActivity();
   }
   render() {
-    const { snapshot, bookings, activitys, emploeys } = this.props;
-    console.log(emploeys);
+    const { snapshot, bookings, activitys, emploeys, loading } = this.props;
+    if (loading) {
+      return (
+        <h1>Loading...</h1>
+      );
+    }
     return (
       <Layout snapshot={snapshot} bookings={bookings} activitys={activitys} emploeys={emploeys} />
     );

@@ -44,7 +44,8 @@ export const mapStateToProps = state => ({
   snapshot: state.bookings.snapshot,
   bookings: state.bookings.bookings,
   activitys: state.activity.activity,
-  emploeys: getBestEmploeys(state.bookings.bookings)
+  emploeys: getBestEmploeys(state.bookings.bookings),
+  loading: state.bookings.bookingLoading
 });
 
 export const mapDispatchToProps = {
